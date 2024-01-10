@@ -1,0 +1,96 @@
+.body {
+  background-color: rgb(35 145 22);
+}
+.section-logo {
+  width: 25%;
+}
+.section-input {
+  width: 50%;
+}
+.section-btn {
+  display: flex;
+  width: 20%;
+  gap: 10px;
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media screen and (max-width: 767px) {
+    .btn {
+      font-size: 14px;
+      padding: 8px 12px 8px 16px;
+      width: 100%;
+      margin-bottom: 10px;
+      /* word-wrap: break-word; */
+    }
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  width: 100%;
+  /* background-color: rgb(47, 57, 46); */
+}
+.btn {
+  border-radius: 60px;
+  font-family: Courier New;
+  color: #f5f5f5;
+  font-size: 18px;
+  background: #0e1b24;
+  padding: 9px 15px 9px 20px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.btn:hover {
+  background: #306382;
+  text-decoration: none;
+  cursor: pointer;
+}
+.search {
+  width: 90%;
+  height: 35px;
+}
+.logo {
+  height: 50px;
+  border-radius: 20px;
+}
+/* Your existing CSS code remains unchanged */
+
+/* Your existing CSS code remains unchanged */
+
+@media screen and (max-width: 767px) {
+  .section-btn {
+    flex-direction: row;
+    /* align-items: center; */
+  }
+  .section-btn .btn {
+    font-size: 14px;
+    padding: 8px 12px 8px 16px;
+    width: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .section-input {
+    /* justify-content: center; */
+    width: 90%;
+    margin: 10px;
+  }
+  .section-btn {
+    flex-direction: column;
+    width: 50%;
+  }
+}
